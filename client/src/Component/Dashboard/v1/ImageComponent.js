@@ -1,14 +1,24 @@
 import React from 'react';
+import CellMeasurer from "react-virtualized/dist/es/CellMeasurer/CellMeasurer";
 
-const ImageComponent = props => {
+const ImageComponent = ({ cache, index, key, parent, imageLink, style }) => {
   return (
-
-    <img
-      className='dashboard__container__cell'
-      src={props.image.imageLink}
-      alt={props.image.imageName}
-    />
-
+    <CellMeasurer
+      cache={cache}
+      index={index}
+      key={key}
+      parent={parent}
+    >
+      <div style={style}>
+        <img
+          src={imageLink ? imageLink : null}
+          style={{
+            height: 80,
+            width: 80
+          }}
+        />
+      </div>
+    </CellMeasurer>
   )
 }
 
