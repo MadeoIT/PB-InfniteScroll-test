@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,400,700&subset=japanese');
+
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+@import 'base/base';
+
+@import 'components/dashboard';
+@import "components/main";

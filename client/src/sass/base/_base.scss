@@ -1,0 +1,17 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: $font-size;
+  /* font-size: .84vw 80% of view port width computes to font-size of 10.25px */
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+
+}
