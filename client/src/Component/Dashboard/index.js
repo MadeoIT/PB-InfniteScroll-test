@@ -1,7 +1,5 @@
 import React from 'react';
 import Unsplash from 'unsplash-js'
-import { getAllImage } from '../../fakeData/data';
-import axios from "axios";
 const version = 'v1';
 const ImageGrid = require(`./${version}/ImageGrid`).default;
 
@@ -26,7 +24,7 @@ export default class Dashboard extends React.Component {
       this.setState({images: JSON.parse(imagesStored)});
       return;
     }
-    unsplash.users.photos('yukato', 1, 10)
+    unsplash.users.photos('franckinjapan', 1, 50)
       .then(data => data.json())
       .then(json => {
         localStorage.setItem('images', JSON.stringify(json))

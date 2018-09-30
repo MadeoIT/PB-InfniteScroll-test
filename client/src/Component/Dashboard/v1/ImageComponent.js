@@ -11,10 +11,11 @@ const ImageComponent = ({ cache, index, key, parent, imageLink, style }) => {
     >
       <div style={style}>
         <img
+          alt=''
           src={imageLink ? imageLink : null}
           style={{
-            height: 80,
-            width: 80
+            //height: 80,
+            width: 100
           }}
         />
       </div>

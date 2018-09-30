@@ -1,7 +1,7 @@
 import React from 'react';
-import ImageComponent from '../v1/ImageComponent';
+//import ImageComponent from '../v1/ImageComponent';
 
-const renderImagesGrid = (images) => images.map(image => <ImageComponent key={image.id} image={image} />)
+//const renderImagesGrid = (images) => images.map(image => <ImageComponent key={image.id} image={image} />)
 
 const ImageGrid = (props) => {
   return(

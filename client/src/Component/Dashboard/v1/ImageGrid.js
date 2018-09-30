@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-  CellMeasurer,
   CellMeasurerCache,
   createMasonryCellPositioner,
   Masonry
@@ -14,7 +13,7 @@ import ImageComponent from "./ImageComponent";
 
 // Default sizes help Masonry decide how many images to batch-measure
 const cache = new CellMeasurerCache({
-  defaultHeight: 250,
+  //defaultHeight: 250,
   defaultWidth: 200,
   fixedWidth: true
 })
@@ -22,10 +21,10 @@ const cache = new CellMeasurerCache({
 // Our masonry layout will use 3 columns with a 10px gutter between
 const cellPositioner = createMasonryCellPositioner({
   cellMeasurerCache: cache,
-  columnCount: 4,
-  columnWidth: 90,
-  spacer: 0
-})
+  columnCount: 3,
+  columnWidth: 120,
+  spacer: 5
+});
 
 const ImageGrid = (props) => {
   const list = props.images;
@@ -53,8 +52,8 @@ const ImageGrid = (props) => {
         cellMeasurerCache={cache}
         cellPositioner={cellPositioner}
         cellRenderer={cellRenderer}
-        height={500}
-        width={360}
+        height={window.innerHeight}
+        width={400}
       />
     </div>
   )

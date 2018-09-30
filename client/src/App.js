@@ -1,11 +1,8 @@
-//@flow
-import * as React from 'react';
+import React from 'react';
 import Dashboard from './Component/Dashboard';
 import Main from "./Component/Main/Main";
 
-type Props = {}
-
-class App extends React.Component<Props> {
+class App extends React.Component {
   render() {
     return (
       <Main>

@@ -12,8 +12,8 @@ const MainView = (props) => {
   return (
     <div>
       <AppBar
+        color='white'
         position="static"
-        color="white"
         className='main__appbar'>
         <Toolbar>
           <Typography variant="title" color="inherit">
